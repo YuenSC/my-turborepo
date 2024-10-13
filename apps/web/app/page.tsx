@@ -1,5 +1,6 @@
-import Image from "next/image";
+import { add } from "@repo/math/add";
 import { Button } from "@repo/ui/button";
+import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -14,13 +15,13 @@ export default function Home() {
           height={38}
           priority
         />
+        {add(1, 3)}
         <ol>
           <li>
             Get started by editing <code>app/page.tsx</code>
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
-
         <div className={styles.ctas}>
           <a
             className={styles.primary}
