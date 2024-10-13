@@ -1,7 +1,7 @@
-import { add } from "@repo/math/add";
-import { Button } from "@repo/ui/button";
-import Image from "next/image";
-import styles from "./page.module.css";
+import { add } from '@repo/math/add'
+import { Button } from '@repo/ui/button'
+import Image from 'next/image'
+import styles from './page.module.css'
 
 export default function Home() {
   return (
@@ -15,6 +15,10 @@ export default function Home() {
           height={38}
           priority
         />
+        <span className="text-sm md:text-base">Testing text-sm</span>
+        <span className="text-base">Testing text-base</span>
+        <span className="text-lg">Testing text-lg</span>
+        <span className="text-xl">Testing text-xl</span>
         {add(1, 3)}
         <ol>
           <li>
@@ -96,5 +100,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  );
+  )
 }
